@@ -38,6 +38,7 @@ connection.connect((err) => {
     console.log('/atted')
   })
 
+  
   app.post('/createProfile', (req, res) => {
       var form = req.body.formObj;
       var sql =`INSERT INTO \`SwimmerProfiles\` (\`SwimID\`, \`Fname\`, \`Lname\`, \`BestRec\`, \`EmpID\`, \`CountryID\`) VALUES (NULL, '${form.Fname}', '${form.Lname}', '${form.BestRec}', '1', '${form.CountryID}');`
