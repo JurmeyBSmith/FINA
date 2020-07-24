@@ -11,6 +11,7 @@ import './App.css';
 import NavBar from './navBar.js';
 import Home from './Home.js';
 import newProfile from './newProfile.js';
+import deleteProfile from './deleteProfile';
 
 class App extends Component {
   state = {}
@@ -26,6 +27,7 @@ class App extends Component {
           {/* <Route path="/" exact component={} /> */}
           <Switch>
           <Route path="/newProfile" exact component={newProfile} />
+          <Route path="/deleteProfile" exact component={deleteProfile} />
           <Route path="/" component={Home} />
           </Switch>
           {/* <Route path="/users/" component={} /> */}

@@ -26,6 +26,14 @@ class NavBar extends Component {
             onClick={this.handleItemClick}
             href="/newProfile">CreateProfile
             </Menu.Item>
+            <br />
+            <Menu.Item
+            name='DeleteProfile'
+            position='right'
+            active={activeItem === 'id'}
+            onClick={this.handleItemClick}
+            href="/deleteProfile">DeleteProfile
+            </Menu.Item>
           
         </Menu.Menu>
       </Menu>
