@@ -9,9 +9,10 @@ class newProfile extends Component {
 
     constructor(props) {
         super(props);
-        //var myVar = this.props.jsonData.data.data.data;
+        
     
         console.log('The props: ', this.props);
+        
         // sync state and props together
         this.state = {
           Fname: "",
@@ -30,12 +31,10 @@ class newProfile extends Component {
       handleSubmit(event) {
         const { trackingNumber, reference } = this.state;
     
-        // go get the values in the form 
-        // update the state?
+      
         this.setState({ submitted: true })
     
-        console.log("State", this.state);
-        //post
+        
         var formObj = this.state;
     
         axios.post('http://localhost:3031/createProfile', {
@@ -46,17 +45,6 @@ class newProfile extends Component {
             )
         )
     
-        // alert(
-        //   'Tracking Number "' + this.state.trackingNumber + '", was submitted' +
-        //   '\nStatus "' + this.state.status + '", was submitted' +
-        //   '\nDelivery Date "' + this.state.deliveryDate + '", was submitted' +
-        //   '\nShip Date "' + this.state.shipDate + '", was submitted' +
-        //   '\nCity "' + this.state.shipcity + '", was submitted' +
-        //   '\nState "' + this.state.shipState + '", was submitted' +
-        //   '\nCountry "' + this.state.shipCountry + '", was submitted' +
-        //   '\nReference Number "' + this.state.reference + '", was submitted'
-    
-        // );
     
       }
 

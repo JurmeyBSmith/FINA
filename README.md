@@ -1,5 +1,31 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+###   CSIS-484: Capstone Phase 1
+###   Jeremy Smith
 
+### Getting started
+1. To get started, cd into './fina' and run the command:
+'npm install' OR 'yarn install' depending on whether you use yarn or npm.
+
+2. Then, create another local server using XAMP or MAMP for your database.
+
+3. Create a DB called 'finadb' under your phpMyAdmin.
+
+4. Copy and paste the SQL DB dump commands from 'phpMyAdmin SQL Dump.docx' from the "Capstone Phase 1" folder. Press 'Go'.
+
+4. Then modify the contents of './server.js' to use your DB credentials.
+Should look like this :
+
+    var connection = mysql.createConnection({
+        host: '127.0.0.1',  *localhost, no need to change*
+        user: 'jeremy',     *Change user to your username*
+        password: 'foo',    *Change password to your password*
+        port: '3306',       *Change port to your port*
+        database: 'finadb'  *Can change if you desire*
+    })
+5. Once your database is up and running then just cd back into './fina' from the terminal and run 'npm run dev' and you are ready to go!
+
+
+
+### Pre-generated readme content with React application.
 ## Available Scripts
 
 In the project directory, you can run:
