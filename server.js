@@ -25,12 +25,11 @@ var connection = mysql.createConnection({
 })
 
 connection.connect((err) => {
-    console.log('Are we even running this?')
     if (err) {
       console.log('Database error:', err);
       throw err
     } else {
-      console.log('You are now connected...');
+      console.log('You are now connected.');
       
     }
   });
