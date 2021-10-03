@@ -34,11 +34,6 @@ connection.connect((err) => {
     }
   });
 
-  app.get('/at', (req, res) => {
-    res.send('AT /');
-    console.log('/atted')
-  })
-
   //CreateProfile
   app.post('/createProfile', (req, res) => {
       var form = req.body.formObj;
